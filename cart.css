@@ -1,0 +1,248 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Samsung Sharp Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Regular'), url('samsungsharpsans.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Samsung Sharp Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Medium'), url('samsungsharpsans-medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Samsung Sharp Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Bold'), url('samsungsharpsans-bold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Samsung Sharp Sans Bold VH';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Samsung Sharp Sans Bold VH'), url('iCiel-SamsungSharpSans-Bold_SMCPS.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Samsung Sharp Sans Regular OpenType';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Samsung Sharp Sans Regular OpenType'), url('samsungsharpsans.otf') format('opentype');
+        }
+        
+    
+        @font-face {
+        font-family: 'Samsung Sharp Sans Medium OpenType';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Samsung Sharp Sans Medium OpenType'), url('samsungsharpsans-medium.otf') format('opentype');
+        }
+        
+    
+        @font-face {
+        font-family: 'Samsung Sharp Sans Bold OpenType';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Samsung Sharp Sans Bold OpenType'), url('samsungsharpsans-bold.otf') format('opentype');
+        }
+
+
+
+header{
+    background-color: #172226;
+    height: 60px;
+}
+
+.a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Samsung Sharp Sans Bold';
+    font-size: 45px;
+    margin-left: 10%;
+}
+
+.cart-header{
+    position: sticky;
+    top: 0px;
+}
+
+.infor{
+    background: #F7F7F7;
+    border-radius: 4px;
+    gap: 10px;
+    min-height: 100px;
+    width: 100%;
+    padding: 16px 16px;
+    width: 900px;
+    height: 200px;
+    margin-top: 1%;
+    margin-left: 9.8%;
+}
+
+.customer-infor{
+    background: #F7F7F7;
+    border-radius: 4px;
+    gap: 10px;
+    min-height: 100px;
+    width: 100%;
+    padding: 16px 16px;
+    width: 900px;
+    height: 200px;
+    margin-top: 1%;
+    margin-left: 9.8%;
+}
+
+.inputs {
+    text-align: left;
+    position: relative;
+    margin: 0 0 15px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 0;
+}
+
+.inputs.two_col.left {
+    float: left;
+}
+
+.inputs.two_col {
+    width: 49%;
+}
+
+.inputs.two_col.right {
+    float: right;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    font-family: 'Samsung Sharp Sans Bold';
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: 200px;
+    margin-left: 39%;
+}
+
+.note_VAT {
+    font-size: 10px;
+    line-height: 16px;
+    color: #86868B;
+    padding-bottom: 10px;
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: 200px;
+}
+
+.img{
+    display: flex;
+    justify-content: start;
+}
+
+.cart-item{
+    background-color: white;
+    height: 100px;
+}
+
+.product-name{
+    font-family: 'Samsung Sharp Sans Medium';
+    margin-left: 39%;
+    margin-top: -100px;
+}
+
+#checkout-payment-load {
+    margin-top: 12px;
+    background: #F7F7F7;
+    border-radius: 4px;
+    padding: 16px 16px 0 16px;
+    width: 900px;
+    margin-left: 9.8%;
+}
+
+.payment-method .payment-details {
+    display: flex !important;
+    width: 100%;
+    align-content: center;
+    padding-left: 16px;
+    align-items: center;
+}
+
+.method-list .method-name {
+    border: 1px solid #D2D2D7;
+    border-radius: 8px;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.payment-logo {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 !important;
+    margin: 0 12px !important;
+    background: #fff !important;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+a, button {
+    user-select: none !important;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #0066cc;
+    font-size: 15px;
+    font-family: 'Samsung Sharp Sans Bold VH';
+}
+
+.checkout-button {
+    width: 100% !important;
+    height: 48px;
+    background: #000000;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Samsung Sharp Sans Bold VH';
+}
+
+.checkout-button {
+    display: inline-block;
+    min-width: 160px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+[type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+
+
+
