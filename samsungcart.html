@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>cart</title>
+    <link rel="stylesheet" href="cart.css" type="text/css">
+</head>
+
+<header class="cart-header">
+  <a class="a" href="index.html">MOBILESHOP</a> 
+</header>
+
+<body>
+    <div class="infor">
+        <h2 style="font-family: 'Samsung Sharp Sans Bold VH';">Thông tin đơn hàng</h2><hr>
+                <div class="cart-item">
+                    <img class="img" src="https://clickbuy.com.vn/uploads/pro/samsung-galaxy-s24-ultra-1tb_197561.jpg" alt="Samsung Galaxy S24 Ultra" style="height: 100px; margin-left: 60px;" >
+                    <a href="samsung-galaxy-s24-ultra.html"><div class="product-name">Samsung Galaxy S24 Ultra</div></a>
+                    <div class="price">31.990.000₫</div>
+                    <div class="note_VAT">(Đã bao gồm VAT)</div>
+                </div>
+    </div>
+
+    <div class="customer-infor">
+        <h2 style="font-family: 'Samsung Sharp Sans Bold VH';">Thông tin cá nhân</h2><hr>
+    <form onsubmit="return validateForm()"></form>
+                <label >
+                    <input type="text" id="name" name="name" class="nhap"  placeholder="Tên" required>
+                </label>
+                <div class="flex1">
+                <label >
+                    <input type="tel" id="phone" name="phone" class="nhap"  placeholder="Số điện thoại" pattern="[0-9]{10}" required>
+                </label>
+                <label >
+                    <input type="email" id="email" name="email" class="nhap" placeholder="Email" required>
+                </label>
+            </div>
+            </div>
+            </div>
+
+            <div id="checkout-payment-load">
+                <div class="checkout-data">
+                    <div class="section payment-method">
+                    <div class="title_checkout_billing">
+                    <h2 style="font-family: 'Samsung Sharp Sans Bold VH';">Hình thức thanh toán</h2><hr>
+                    </div>
+                    <div class="notice-payment" style="text-align:left;">
+                    Quý khách vui lòng lựa chọn các hình thức thanh toán dưới đây:
+                    </div>
+                    <ul class="method-list" id="payment-method-block">
+                        <li style="display: block">
+                            <div class="method-name">
+                                <div class="payment-details d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <input onclick="selectPaymentMethod('PaymentOnepay')" id="paymentmethod_0" type="radio" name="paymentmethod" value="Payments.Onepay">
+                                        
+                                    </div>
+                                        <div class="payment-logo">
+                                            <label for="paymentmethod_0">
+                                                <img src="https://samcenter.vn/Plugins/Payments.Onepay/logo.jpg" alt="Thanh toán OnePay" width="36" height="36">
+                                            </label>
+                                        </div>
+                                    <div class="d-flex align-items-center item_paymentmethod" style="width: 100%;">
+
+                                        <label for="paymentmethod_0">Thanh toán OnePay</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="display: block">
+                            <div class="method-name">
+                                <div class="payment-details d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <input onclick="selectPaymentMethod('PaymentPayoo')" id="paymentmethod_1" type="radio" name="paymentmethod" value="Payments.Payoo">
+                                        
+                                    </div>
+                                        <div class="payment-logo">
+                                            <label for="paymentmethod_1">
+                                                <img src="https://samcenter.vn/Plugins/Payments.Payoo/logo.jpg" alt="Thanh toán Payoo" width="36" height="36">
+                                            </label>
+                                        </div>
+                                    <div class="d-flex align-items-center item_paymentmethod" style="width: 100%;">
+
+                                        <label for="paymentmethod_1">Thanh toán Payoo</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="display: block">
+                            <div class="method-name">
+                                <div class="payment-details d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <input onclick="selectPaymentMethod('PaymentVietQr')" id="paymentmethod_2" type="radio" name="paymentmethod" value="Payments.VietQr" checked="checked">
+                                        
+                                    </div>
+                                        <div class="payment-logo">
+                                            <label for="paymentmethod_2">
+                                                <img src="https://samcenter.vn/Plugins/Payments.VietQr/logo.jpg" alt="Chuyển khoản ngân hàng" width="36" height="36">
+                                            </label>
+                                        </div>
+                                    <div class="d-flex align-items-center item_paymentmethod" style="width: 100%;">
+
+                                        <label for="paymentmethod_2">Chuyển khoản ngân hàng</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="check-out">
+                    <h3 style="font-family: 'Samsung Sharp Sans Bold VH';">Xác nhận thanh toán</h3><hr>
+
+                    <div class="terms-of-service">
+                        <div class="d-flex">
+                            <div><input id="termsofservice" type="checkbox" name="termsofservice"></div>
+                            <label for="termsofservice">
+                                <span class="rule-web">Tôi đã đọc và đồng ý với</span>
+                                <a style="margin-left: -1px;" href="/chinh-sach-doi-tra" class="read" target="_blank">điều khoản và điều kiện</a>
+                                <span class="rule-web">của website</span>
+                            </label>
+                        </div>
+                    </div>
+
+                        <button type="submit" id="checkout" name="checkout" value="checkout" class="checkout-button"> Xác nhận </button>
+        </form>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+  // Lấy giá trị từ các trường input
+  const name = document.getElementById('name').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const termsChecked = document.getElementById('termsofservice').checked; // Lấy trạng thái của checkbox
+
+  // Biểu thức kiểm tra số điện thoại (10 đến 15 chữ số, có thể bắt đầu với dấu +)
+  const phonePattern = /^\+?[0-9]{10,15}$/;
+  // Biểu thức kiểm tra email hợp lệ
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Kiểm tra nếu tên bị bỏ trống
+  if (name === "") {
+    alert("Vui lòng nhập tên của bạn.");
+    return false;
+  }
+
+  // Kiểm tra nếu số điện thoại bị bỏ trống hoặc không hợp lệ
+  if (phone === "" || !phonePattern.test(phone)) {
+    alert("Vui lòng nhập số điện thoại hợp lệ.");
+    return false;
+  }
+
+  // Kiểm tra nếu email bị bỏ trống hoặc không hợp lệ
+  if (email === "" || !emailPattern.test(email)) {
+    alert("Vui lòng nhập email hợp lệ.");
+    return false;
+  }
+
+  // Kiểm tra xem người dùng đã chọn checkbox đồng ý điều khoản chưa
+  if (!termsChecked) {
+    alert("Vui lòng đồng ý với các điều khoản và chính sách.");
+    return false;
+  }
+
+  // Nếu tất cả các trường đều hợp lệ
+  return true;
+}
+    </script>
+</body>

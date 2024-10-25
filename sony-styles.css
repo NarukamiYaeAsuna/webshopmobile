@@ -62,7 +62,7 @@ body{
 
 .content-right{
     margin-left: 50%;
-    margin-top: -5180px;
+    margin-top: -5050px;
     position:unset;
 }
 
@@ -246,7 +246,7 @@ a{
     font-size: 16px;
     text-transform: unset !important;
     padding: 0 24px;
-    margin-left: 50%; 
+    margin-left: 40%; 
     margin-top: -100%;
 }
 

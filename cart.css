@@ -53,7 +53,7 @@ body{
         font-family: 'Samsung Sharp Sans Bold OpenType';
         font-style: normal;
         font-weight: normal;
-        src: local('Samsung Sharp Sans Bold OpenType'), url('samsungsharpsans-bold.otf') format('opentype');
+        src: local('Sdisplay: flex;amsung Sharp Sans Bold OpenType'), url('samsungsharpsans-bold.otf') format('opentype');
         }
 
 
@@ -90,6 +90,7 @@ header{
 }
 
 .customer-infor{
+   
     background: #F7F7F7;
     border-radius: 4px;
     gap: 10px;
@@ -102,26 +103,19 @@ header{
     margin-left: 9.8%;
 }
 
-.inputs {
-    text-align: left;
-    position: relative;
-    margin: 0 0 15px;
-    white-space: nowrap;
-    text-align: center;
-    font-size: 0;
-}
 
-.inputs.two_col.left {
-    float: left;
-}
+.nhap {
+    width: 98%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
 
-.inputs.two_col {
-    width: 49%;
-}
 
-.inputs.two_col.right {
-    float: right;
-}
 
 .price{
     font-weight: 700;

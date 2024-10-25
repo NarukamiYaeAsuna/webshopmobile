@@ -62,9 +62,23 @@ body{
 
 .content-right{
     margin-left: 50%;
-    margin-top: -4700px;
+    margin-top: -4440px;
     position:unset;
 }
+
+.nubia-header{
+    position: sticky;
+    top: 0px;
+}
+
+.mini-content-left{
+    margin-left: 10%;
+}
+
+.mini-content-right{
+    margin-top: -425px;
+}
+
 .odd{
     background-color: #ecf0f1;
     width: 100%;
@@ -112,19 +126,6 @@ a{
     font-family: 'Samsung Sharp Sans Bold';
     font-size: 45px;
     margin-left: 10%;
-}
-
-.nubia-header{
-    position: sticky;
-    top: 0px;
-}
-
-.mini-content-left{
-    margin-left: 10%;
-}
-
-.mini-content-right{
-    margin-top: -350px;
 }
 
 .price{
@@ -193,7 +194,7 @@ a{
     font-size: 16px;
     text-transform: unset !important;
     padding: 0 24px;
-    margin-left: 50%; 
+    margin-left: 40%; 
     margin-top: -100%;
 }
 
@@ -239,3 +240,6 @@ a{
     margin-top: 0.5%;
 }
 
+ul{
+    margin-left: -20px;
+}

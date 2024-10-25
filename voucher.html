@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Store - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+
+<header class="headershop">
+  <a href="index.html">MOBILESHOP</a>
+
+  <div class="CongCu">         
+    <img id src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCMiAkQCjSHwnA3dSGZgRtfE_QNcENJpvPzytBccVC7UDqk4xzehZddNa0ZHJMF-AWxcE&usqp=CAU" alt="NoLoad" width="36" height="36"style="border-radius:25px;" onclick="openDangnhap()">
+  </div>
+  <div class="CongCu1">   
+   <img id src="https://media.istockphoto.com/id/639811872/id/vektor/ikon-keranjang-belanja.jpg?s=170667a&w=0&k=20&c=QC3YQXPAwH970D-TI_joyee7y4Pphuoipzt6dCZC-gA=" alt="NoLoad" width="36" height="36"style="border-radius:25px;" onclick="openGiohang()">
+  </div>
+  <div id="dangnhapback" class="dangnhapback" onclick="closeDangnhap(event)">
+    <!-- Form đăng nhập nằm ở đây -->
+    <div id="dangnhapform" onclick="event.stopPropagation()">
+      <div onclick="closeDangnhap()" class="openDangnhap">
+        <div class="textdangnhap">TÀI KHOẢN</div>
+        <div onclick="dangki()" class="dangki">Đăng Kí</div>
+        <div onclick="dangnhap()" class="dangnhap">Đăng Nhập</div>
+      </div> 
+    </div>
+  </div>
+  <div id="giohangback" class="giohangback" onclick="closeGiohang(event)">
+    <!-- Form đăng nhập nằm ở đây -->
+    <div id="dangnhapform" onclick="event.stopPropagation()">
+      <div onclick="closeGiohang()" id="openGiohang"class="openGiohang">
+        
+        <div class="textdangnhap"> GIỎ HÀNG CỦA BẠN</div>
+        <div id="sanphamContainer"></div>
+      </div> 
+    </div>
+  </div>
+  
+
+  <div class="search-container">
+    <img src="https://png.pngtree.com/element_our/20190528/ourlarge/pngtree-magnifying-glass-icon-image_1128382.jpg "
+      alt="noload" width="40px" height="38.4px"
+      style="border-top-left-radius: 25px; margin-left:15px  ;border-bottom-left-radius:25px; border: 2px solid #ccc; ">
+    <label for="search">
+      <input class="search-box" type="search" id="search" placeholder="Search...">
+    </label>
+  </div>  
+</header>
+
+<body>
+
+    
+
+    <div class="flextext">
+     <img src="https://cdn.dribbble.com/users/124604/screenshots/3984135/media/cce6c2ed528f93aba13c4005cf3bb6e2.gif" alt="NoLoad" width="400px" height="300px" style="margin-left: 30px;box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+     <div class="slider">
+      <div class="slides">
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img  src="https://cdn.tgdd.vn/Products/Images/42/307174/Slider/samsung-galaxy-s24-ultra-5g-thumb-youtube-1020x570.jpg" alt="Điện thoại 1">
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img  src="https://imagev3.vietnamplus.vn/w1000/Uploaded/2024/xtsqr/2024_09_10/screenshot-2024-09-10-at-013605-2300.png.webp" alt="Điện thoại 2">
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img  src="https://cdn.tgdd.vn/2023/11/content/1-800x450-27.jpg" alt="Điện thoại 3">
+        </div>
+      </div>
+    </div>
+  </div>
+<!--DANH SÁCH CÁC VOUCHER VIPPRO-------------------------------------------------------------------------------->
+  
+<img src="https://inmauhanoi.com/wp-content/uploads/2019/03/in-voucher-gia-re-lay-ngay-tai-ha-noi.png" alt="Noload" width="195px" style="margin-left: 30px;">
+<img src="https://www.droppii.com/wp-content/uploads/2023/02/dropship-40.png" alt="Noload" width="195px" style="margin-left: 30px;">
+<!--ThanhCuối----------------------------------------------------------------------------------------------------------------->    
+    <footer>
+        <p>© Nhóm9 .NoCopyRight</p>
+    </footer>
+
+<!--ThanhLiênKết----------------------------------------------------------------------------------------------------->
+    <div class="Thanh">
+       
+        <div onclick="TrangChu()"class="text-item1">Trang Đầu</div>
+        <div class="text-item1">Điện thoại</div>
+        <div class="text-item1">Nổi Bật</div>
+        <div onclick="TrangChu()" class="text-item1">Voucher</div>
+        <div class="text-item1">Địa Chỉ</div>
+        <div class="text-item1">Phụ Kiện</div>
+        <div class="text-item1">Tư Vấn</div>
+        <div class="text-item1">Trợ Giúp</div>
+        
+        <img src="https://file.hstatic.net/200000295622/collection/icon-flash-sale_9cb195391ead4bfa8f5e3d11c8322e26.gif" alt="Noload" width="195px" style="margin-left: -30px;">
+    </div>
+
+    
+</body>
+</html>
