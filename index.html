@@ -94,9 +94,9 @@
     
     <div class="animation">
       <div  class="product-item" onclick="iphone()">
-        <img src="https://clickbuy.com.vn/uploads/product-variant/2_52507.png" alt="Samsung Galaxy S24 Ultra" width="172px">
-        <h3>Iphone 16 Pro Max 512GB</h3>
-        <p>46.990.000₫</p>
+        <img src="https://clickbuy.com.vn/uploads/product-variant/2_52507.png" alt="Samsung Galaxy S24 Ultra" width="195px">
+        <h3>Iphone 16 Pro Max</h3>
+        <p>Giá: 46.990.000₫</p>
         
         <button onclick="buttonClickIphone(event)">Thêm vào giỏ hàng</button>       
         
@@ -131,6 +131,15 @@
     </div>
     
     <div class="animation">
+      <div style="cursor: pointer;" class="product-item" onclick="aquos()">
+        <img src="https://jp.sharp/products/aquos-r8-pro/d/images/img_carrier_model.png" alt="Sharp AQUOS R8 Pro" width="138px">
+        <h3>Sharp AQUOS R8 Pro</h3>
+        <p>Giá: 29.466.000₫</p>
+        <button style="cursor: pointer;" onclick="buttonClickAQUOS(event)">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+
+    <div class="animation">
       <div style="cursor: pointer;" class="product-item" onclick="oppo()">
         <img src="https://cdn.mobilecity.vn/mobilecity-vn/images/2024/01/w300/oppo-find-x7-ultra-xanh.jpg.webp" alt="oppo-find-x7-ultra-xanh" width="196px">
         <h3>Oppo Find X7 Ultra 5G</h3>
@@ -138,6 +147,7 @@
         <button style="cursor: pointer;" onclick="buttonClickOppo(event)">Thêm vào giỏ hàng</button>
       </div>
     </div>
+
     <div class="animation">
       <div style="cursor: pointer;" class="product-item" onclick="samsung()">
         <img src="https://cdn.tgdd.vn/Products/Images/42/311033/nokia-105-4g-den-thumb-600x600.jpg" alt="Samsung Galaxy S24 Ultra" width="172px">
@@ -146,6 +156,7 @@
         <button style="cursor: pointer;" onclick="buttonClickNokia(event)">Thêm vào giỏ hàng</button>
       </div>
   </div>
+
    <div class="animation">
     <div style="cursor: pointer;" class="product-item" onclick="samsung()">
       <img src="https://cdn.mobilecity.vn/mobilecity-vn/images/2023/04/w300/xiaomi-black-shark-3-xam.jpg.webp" alt="Samsung Galaxy S24 Ultra" width="150px">
@@ -154,21 +165,43 @@
       <button style="cursor: pointer;" onclick="buttonClickXiaomi(event)">Thêm vào giỏ hàng</button>
       </div>
      </div>
+
      <div class="animation">
-      <div style="cursor: pointer;" class="product-item" onclick="samsung()">
-        <img src="data:image/jpeg;base64,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" alt="Samsung Galaxy S24 Ultra" width="150px">
-        <h3>Samsung Galaxy Z Fold 6 5G</h3>
-        <p>Giá: 33.699.000₫</p>
+      <div style="cursor: pointer;" class="product-item" onclick="samsungzf()">
+        <img src="https://cdn2.cellphones.com.vn/358x/media/catalog/product/i/m/image_1172.png" alt="Samsung Galaxy Z Fold6" width="150px">
+        <h3>Samsung Galaxy Z Fold6</h3>
+        <p>Giá: 39.490.000₫</p>
         <button style="cursor: pointer;" onclick="buttonClickZF6(event)">Thêm vào giỏ hàng</button>
         </div>
-      </div><div class="animation">
+      </div>
+
+      <div class="animation">
         <div style="cursor: pointer;" class="product-item" onclick="samsung()">
-          <img src="https://cdn.ringkevietnam.com/wp-content/uploads/2024/07/op-lung-samsung-galaxy-z-flip-6-ringke-fusion-magnetic-03-600x600.jpg" alt="Samsung Galaxy S24 Ultra" width="150px">
-          <h3>Samsung Galaxy Z Flip6 12GB 256GB</h3>
+          <img src="https://cdn.ringkevietnam.com/wp-content/uploads/2024/07/op-lung-samsung-galaxy-z-flip-6-ringke-fusion-magnetic-03-600x600.jpg" alt="Samsung Galaxy Z Flip6" width="150px">
+          <h3>Samsung Galaxy Z Flip6</h3>
           <p>Giá: 26.990.000₫</p>
           <button style="cursor: pointer;" onclick="buttonClickZFL6(event)">Thêm vào giỏ hàng</button>
         </div>
       </div>
+
+      <div class="animation">
+        <div style="cursor: pointer;" class="product-item" onclick="google()">
+          <img src="https://www.didongmy.com/vnt_upload/product/08_2024/thumbs/(600x600)_google_pixel_9_pro_xl_5g_trang_didongmy_thumb_600x600_1.jpg" alt="Google Pixel 9 Pro XL" width="173.5px">
+          <h3>Google Pixel 9 Pro XL</h3>
+          <p>Giá: 31.990.000₫</p>
+          <button style="cursor: pointer;" onclick="buttonClickGG(event)">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+
+      <div class="animation">
+        <div style="cursor: pointer;" class="product-item" onclick="samsung()">
+          <img src="https://clickbuy.com.vn/uploads/pro/samsung-galaxy-s24-ultra-1tb_197561.jpg" alt="Samsung Galaxy S24 Ultra" width="150px">
+          <h3>Samsung Galaxy S24 Ultra</h3>
+          <p>Giá: 27.550.000₫</p>
+          <button style="cursor: pointer;" onclick="buttonClick(event)">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+
       <div class="animation">
         <div style="cursor: pointer;" class="product-item" onclick="samsung()">
           <img src="https://clickbuy.com.vn/uploads/pro/samsung-galaxy-s24-ultra-1tb_197561.jpg" alt="Samsung Galaxy S24 Ultra" width="150px">
@@ -177,22 +210,7 @@
           <button style="cursor: pointer;" onclick="buttonClick(event)">Thêm vào giỏ hàng</button>
         </div>
       </div>
-      <div class="animation">
-        <div style="cursor: pointer;" class="product-item" onclick="samsung()">
-          <img src="https://clickbuy.com.vn/uploads/pro/samsung-galaxy-s24-ultra-1tb_197561.jpg" alt="Samsung Galaxy S24 Ultra" width="150px">
-          <h3>Samsung Galaxy S24 Ultra</h3>
-          <p>Giá: 31.990.000₫</p>
-          <button style="cursor: pointer;" onclick="buttonClick(event)">Thêm vào giỏ hàng</button>
-        </div>
-      </div>
-      <div class="animation">
-        <div style="cursor: pointer;" class="product-item" onclick="samsung()">
-          <img src="https://clickbuy.com.vn/uploads/pro/samsung-galaxy-s24-ultra-1tb_197561.jpg" alt="Samsung Galaxy S24 Ultra" width="150px">
-          <h3>Samsung Galaxy S24 Ultra</h3>
-          <p>Giá: 31.990.000₫</p>
-          <button style="cursor: pointer;" onclick="buttonClick(event)">Thêm vào giỏ hàng</button>
-        </div>
-      </div>
+
       <div class="animation">
         <div style="cursor: pointer;" class="product-item" onclick="redmagic()">
           <img src="https://clickbuy.com.vn/uploads/product-variant/2_52576.jpg" alt="ZTE Nubia Red Magic 9S Pro Plus" width="150px">
@@ -200,23 +218,25 @@
           <p>Giá: 21.790.000₫</p>
           <button style="cursor: pointer;" onclick="buttonClick3(event)" >Thêm vào giỏ hàng</button>
         </div>
-    </div>
-    <div class="animation">
-      <div style="cursor: pointer;" class="product-item" onclick="redmagic()">
-        <img src="https://clickbuy.com.vn/uploads/product-variant/2_52576.jpg" alt="ZTE Nubia Red Magic 9S Pro Plus" width="150px">
-        <h3>ZTE Nubia Red Magic 9S Pro Plus</h3>
-        <p>Giá: 21.790.000₫</p>
-        <button style="cursor: pointer;" onclick="buttonClick3(event)" >Thêm vào giỏ hàng</button>
       </div>
-  </div>
-  <div class="animation">
-    <div style="cursor: pointer;" class="product-item" onclick="redmagic()">
-      <img src="https://clickbuy.com.vn/uploads/product-variant/2_52576.jpg" alt="ZTE Nubia Red Magic 9S Pro Plus" width="150px">
-      <h3>ZTE Nubia Red Magic 9S Pro Plus</h3>
-      <p>Giá: 21.790.000₫</p>
-      <button style="cursor: pointer;" onclick="buttonClick3(event)" >Thêm vào giỏ hàng</button>
-    </div>
-</div>
+
+      <div class="animation">
+        <div style="cursor: pointer;" class="product-item" onclick="redmagic()">
+          <img src="https://clickbuy.com.vn/uploads/product-variant/2_52576.jpg" alt="ZTE Nubia Red Magic 9S Pro Plus" width="150px">
+          <h3>ZTE Nubia Red Magic 9S Pro Plus</h3>
+          <p>Giá: 21.790.000₫</p>
+          <button style="cursor: pointer;" onclick="buttonClick3(event)" >Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+
+      <div class="animation">
+        <div style="cursor: pointer;" class="product-item" onclick="redmagic()">
+          <img src="https://clickbuy.com.vn/uploads/product-variant/2_52576.jpg" alt="ZTE Nubia Red Magic 9S Pro Plus" width="150px">
+          <h3>ZTE Nubia Red Magic 9S Pro Plus</h3>
+          <p>Giá: 21.790.000₫</p>
+          <button style="cursor: pointer;" onclick="buttonClick3(event)" >Thêm vào giỏ hàng</button>
+        </div>
+      </div>
 
 </div>
 <h2 style="font-family: 'Samsung Sharp Sans Bold VH';">ㅤㅤXem thêm </h2>

@@ -5,6 +5,9 @@ body {
     margin-right: 0;
     padding: 0;
 }
+.infor{
+  padding: 10px;
+}
 
 @font-face {
   font-family: 'Samsung Sharp Sans Regular';

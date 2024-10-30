@@ -15,14 +15,7 @@
 <body>
     <div class="infor">
         <h2 style="font-family: 'Samsung Sharp Sans Bold VH';">Thông tin đơn hàng</h2><hr>
-            <a href="samsung-galaxy-s24-ultra.html">
-                <div class="cart-item">
-                    <img class="img" src="https://images.samsung.com/is/image/samsung/assets/vn/smartphones/galaxy-s24-ultra/buy/S24Ultra-Color-Titanium_Black_PC_0527_final.jpg?imbypass=true" alt="Samsung Galaxy S24 Ultra" style="height: 100px; width: 200px;">
-                    <div class="product-name">Samsung Galaxy S24 Ultra</div>
-                    <div class="price">31.990.000₫</div>
-                    <div class="note_VAT">(Đã bao gồm VAT)</div>
-                </div>
-            </a>
+            
     </div>
 
     <div class="customer-infor">
@@ -133,9 +126,36 @@
         </div>
     </div>
 
-
+  
 
 
 
 
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Lấy dữ liệu giỏ hàng từ localStorage
+      const gioHang = JSON.parse(localStorage.getItem('gioHang')) || [];
+  
+      // Tìm phần tử `.infor` để thêm thông tin sản phẩm
+      const inforElement = document.querySelector('.infor');
+      
+      if (gioHang.length === 0) {
+        inforElement.innerHTML += '<p>Giỏ hàng của bạn trống.</p>';
+      } else {
+        gioHang.forEach(item => {
+          const itemHTML = `
+            <a href="${item.link}">
+              <div class="cart-item">
+                <img class="img" src="${item.image}" alt="${item.name}" style="height: 100px; width: 200px;">
+                <div class="product-name">${item.name}</div>
+                <div class="price">${(item.price * item.quantity).toLocaleString('vi-VN')}₫</div>
+                <div class="note_VAT">(Đã bao gồm VAT)</div>
+              </div>
+            </a>
+          `;
+          inforElement.insertAdjacentHTML('beforeend', itemHTML);
+        });
+      }
+    });
+  </script>

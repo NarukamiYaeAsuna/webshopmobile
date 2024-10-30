@@ -1,0 +1,313 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Xóa margin của body */
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Samsung Sharp Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Regular'), url('samsungsharpsans.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'Samsung Sharp Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Medium'), url('samsungsharpsans-medium.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'Samsung Sharp Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Bold'), url('samsungsharpsans-bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Samsung Sharp Sans Bold VH';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Bold VH'), url('iCiel-SamsungSharpSans-Bold_SMCPS.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Samsung Sharp Sans Regular OpenType';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Regular OpenType'), url('samsungsharpsans.otf') format('opentype');
+}
+        
+@font-face {
+    font-family: 'Samsung Sharp Sans Medium OpenType';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Medium OpenType'), url('samsungsharpsans-medium.otf') format('opentype');
+}
+        
+@font-face {
+    font-family: 'Samsung Sharp Sans Bold OpenType';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Bold OpenType'), url('samsungsharpsans-bold.otf') format('opentype');
+}
+
+.container-upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.mini-content-left, .mini-content-right {
+    flex: 1;
+    padding: 10px;
+    width: 48%;
+}
+
+.mini-content-left {
+    display: block !important;
+    text-align: center; /* Căn giữa hình ảnh và tiêu đề */
+    flex: 1;
+    padding: 0 10px;
+}
+
+.mini-content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-bottom {
+    display: flex;
+    justify-content: space-between; /* Căn đều hai bên */
+    align-items: flex-start;
+}
+ 
+.content-left, .content-right {
+    width: 40%; /* Điều chỉnh chiều rộng cụ thể */
+    margin: 20px;
+}
+
+.content-right{
+    display: block;
+    margin-right: 180px;
+    max-width: 100%;
+}
+
+.odd{
+    background-color: #ecf0f1;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+.spec-value{
+    display: flex;
+    margin-left: 42%;
+}
+
+.title{
+    font-family: 'Samsung Sharp Sans Bold VH';
+}
+
+h2, h3{
+    font-family: 'Samsung Sharp Sans Bold VH';
+}
+
+header{
+    background-color: #172226;
+    height: 60px;
+}
+
+.home{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Samsung Sharp Sans Bold';
+    font-size: 45px;
+    margin-left: 16.5%;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+    margin-top: 10px;
+    font-family: 'Samsung Sharp Sans Bold';
+}
+
+.note_VAT {
+    font-size: 13px;
+    color: #86868B;
+    margin-top: 18px;
+}
+
+.price, .note_VAT{
+    margin-bottom: 15px
+}
+
+.upper-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.short-des {
+    display: block;
+    background: #F7F7F7;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 15px 0;
+    width: 650px;    
+}
+
+.memory-options {
+    display: flex;
+    gap: 10px;
+}
+
+.memory-option {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 15px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.memory-option:hover {
+    background-color: #eaeaea;
+}
+
+.memory-option.selected {
+    border-color: #0cbebe;
+    background-color: #14e4e4;
+    color: #fff;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+.mua-ngay-btn{
+    display: block; 
+    user-select: none !important;
+    font-family: 'Samsung Sharp Sans Bold VH';
+    width: 100%; /* Chiều rộng bằng với phần tử cha */
+    height: 56px;
+    background-color: #000000;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 0 24px;
+    margin: 0; /* Xóa margin để căn chỉnh chính xác */
+}
+
+.check-out{
+    text-decoration: none;
+}
+
+.tra-gop-btn, .thu-cu-btn {
+    font-family: 'Samsung Sharp Sans Bold VH';
+    width: 49%;
+    height: 40px;
+    background-color: #000000;
+    color: aliceblue;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.buttom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Đảm bảo phần tử cha chiếm toàn bộ chiều rộng */
+    padding-top: 10px;
+    flex-direction: row; /* Đặt các nút theo cột thay vì hàng nếu muốn */
+
+}
+
+.mua-ngay-btn-container {
+    width: 100%;
+    padding: 5px 0; /* Khoảng cách dọc */
+}
+
+.button-container{
+    display: block;
+    width: 670px;
+}
+
+.price-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-img{
+    margin-right: 80px;
+}
+
+@media screen and (min-width: 641px) {
+    .video-wrap {
+        max-width: 1280px;
+        margin: 30px auto;
+    }
+}
+
+.video-wrap {
+    position: relative;
+    width: 100%;
+    margin: 6vw auto;
+}
+
+.video-inner {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 58.25%;
+    overflow: hidden;
+    z-index: -2;
+    margin-top: -90px; 
+}
+
+.video-inner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+ul{
+    margin-left: -20px;
+}
+
+
+
