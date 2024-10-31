@@ -33,6 +33,7 @@
       </div> 
     </div>
   </div>
+
   <div id="giohangback" class="giohangback" onclick="closeGiohang(event)">
     <!-- Form đăng nhập nằm ở đây -->
     <div id="dangnhapform" onclick="event.stopPropagation()">
@@ -42,18 +43,21 @@
            
            <img src="https://media.istockphoto.com/id/639811872/id/vektor/ikon-keranjang-belanja.jpg?s=170667a&w=0&k=20&c=QC3YQXPAwH970D-TI_joyee7y4Pphuoipzt6dCZC-gA=" alt="NoLoad" width="36" height="36"style="border-radius:25px;margin:10px" >
            <div class="textgiohangcuaban">Giỏ hàng của bạn</div>
-           <div class="CongCu3"></div>
-           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF0veegzaSSTgrUB3vEUpY8LOgcKgo-BrCy6_EUd_u36V3phYTUJX-Apayw58yRK14zUY&usqp=CAU" alt="NoLoad" width="36" height="36" style="border-radius:25px;cursor: pointer;" onclick="closeGiohang(event)" >
-           </div>
+           
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF0veegzaSSTgrUB3vEUpY8LOgcKgo-BrCy6_EUd_u36V3phYTUJX-Apayw58yRK14zUY&usqp=CAU" alt="NoLoad" max-width="36" height="36" style="border-radius:25px;cursor: pointer;top: 10px; margin-left: 0px;" onclick="closeGiohang(event)" >
+          
           </div>
            
-        <div class="pr2">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤTỔNG GIÁ TRỊ GIỎ HÀNG:ㅤ <span id="totalCartValue">0đ</span></div>
-        <button  onclick="openThanhToan()"class="thanhtoanluon">THANH TOÁN NGAY</button>
+          </div>
+           
+          <div class="pr2">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤTỔNG GIÁ TRỊ GIỎ HÀNG:ㅤ <span id="totalCartValue">0đ</span>
+          <button  onclick="openThanhToan()"class="thanhtoanluon">THANH TOÁN NGAY</button>
+          </div>
         
       </div> 
     </div>
-  </div>
-  
+ 
+
 
   <div class="search-container">
     <img src="https://png.pngtree.com/element_our/20190528/ourlarge/pngtree-magnifying-glass-icon-image_1128382.jpg "
@@ -337,19 +341,17 @@
   
 
 <!--ThanhLiênKết----------------------------------------------------------------------------------------------------->
-    <div class="Thanh">
-       
-        <div onclick="TrangChu()"class="text-item1">Trang Đầu</div>
-        <div onclick="openMobile()" class="text-item1">Điện thoại</div>
-        <div class="text-item1">Nổi Bật</div>
-        <div  class="text-item1">Voucher</div>
-        <div onclick="openmap()"class="text-item1">Địa Chỉ</div>
-        <div onclick="phukien()"class="text-item1">Phụ Kiện</div>
-        <div onclick="opentintuc()"class="text-item1">Tin Tức</div>
-        <div class="text-item1">Trợ Giúp</div>
-        
-        <img src="https://file.hstatic.net/200000295622/collection/icon-flash-sale_9cb195391ead4bfa8f5e3d11c8322e26.gif" alt="Noload" width="195px" style="margin-left: -30px;">
-    </div>
+<div class="Thanh">
+  <div onclick="TrangChu()" class="text-item1">Trang Đầu</div>
+  <div onclick="openMobile()" class="text-item1">Điện thoại</div>
+  <div class="text-item1">Nổi Bật</div>
+  <div class="text-item1">Voucher</div>
+  <div onclick="openmap()" class="text-item1">Địa Chỉ</div>
+  <div onclick="phukien()" class="text-item1">Phụ Kiện</div>
+  <div onclick="opentintuc()" class="text-item1">Tin Tức</div>
+  <div class="text-item1">Trợ Giúp</div>
+  <img src="https://file.hstatic.net/200000295622/collection/icon-flash-sale_9cb195391ead4bfa8f5e3d11c8322e26.gif" alt="Noload" width="195px" style="margin-left: -30px;">
+</div>
 
     
 </body>

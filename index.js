@@ -279,13 +279,13 @@ function addToCart(sanPham) {
           <p>Giá: ${sanPham.price.toLocaleString('vi-VN')}đ</p>
         </div>
       </div>
-      <div class="pr">ㅤㅤㅤㅤSỐ LƯỢNG SẢN PHẨM</div>
+      <div class="pr3">ㅤㅤㅤㅤSỐ LƯỢNG SẢN PHẨM</div>
       <div class="quantity-controls">
         <button id="decrease-${uniqueId}" class="quantity-btn">-</button>
         <label id="quantityLabel-${uniqueId}">${quantity}</label>
         <button id="increase-${uniqueId}" class="quantity-btn">+</button>
       </div>
-      <div class="pr1">ㅤㅤㅤㅤGiá: <span id="total-price-${uniqueId}">${sanPham.price.toLocaleString('vi-VN')}</span>đ</div>
+      <div class="pr3">ㅤㅤㅤㅤGiá: <span id="total-price-${uniqueId}">${sanPham.price.toLocaleString('vi-VN')}</span>đ</div>
       <div class="thungrac">
       <img id="remove-${uniqueId}" class="remove-btn" 
           src="https://media.istockphoto.com/id/928418914/vi/vec-to/th%C3%B9ng-r%C3%A1c-th%C3%B9ng-r%C3%A1c-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-th%C3%B9ng-r%C3%A1c.jpg?s=612x612&w=0&k=20&c=ePcbxUb_LwGfvIP_1J-65pTpIEV-gituNbXKoh2OBP4=" 
