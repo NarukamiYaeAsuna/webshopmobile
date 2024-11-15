@@ -3,8 +3,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0; /* Xóa margin của body */
     padding: 0;
+    display: grid;
+    grid-template-rows:repeat(3,1fr) ;
 }
-
+.gioithieuiphone{
+    height: 700px;
+}
 @font-face {
     font-family: 'Samsung Sharp Sans Regular';
     font-style: normal;
@@ -109,7 +113,6 @@ table {
 }
 
 table {
-    border-collapse: separate;
     text-indent: initial;
     border-spacing: 2px;
 }

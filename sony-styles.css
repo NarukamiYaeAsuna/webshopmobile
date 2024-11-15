@@ -327,3 +327,7 @@ header{
 ul{
     margin-left: -20px;
 }
+
+img{
+    border-radius: 30px;
+}
